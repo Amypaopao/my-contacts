@@ -11,6 +11,8 @@ import { EditComponent } from './edit/edit.component'
 import { RouterModule, Routes } from '@angular/router'
 import { HeaderComponent } from './share/header/header.component'
 import { FooterComponent } from './share/footer/footer.component'
+import { HttpClientModule } from '@angular/common/http'
+import { ContactService } from './contact.service'
 
 // 配置路由规则
 const appRoutes: Routes = [
@@ -54,10 +56,13 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    // 引入数据模块
+    HttpClientModule,
     // 配置路由器
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  //  注入数据
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

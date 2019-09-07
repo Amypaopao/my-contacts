@@ -1,4 +1,21 @@
 <!-- 头部组件 -->
 <my-header title="所有联系人" [isShowCreateButton]="true"></my-header>
+<!-- 列表页 -->
+<ul>
+  <li *ngFor="let contact of contacts">
+    <!-- 左边 -->
+    <div class="left">
+      <img src="../../assets/Iverson.jpg" alt="" />
+      <div>
+        <p>{{ contact.name }}</p>
+        <p>{{ contact.telNum }}</p>
+      </div>
+    </div>
+    <!-- 右边 -->
+    <div class="right">
+      <img src="../../assets/tel.png" alt="" />
+    </div>
+  </li>
+</ul>
 <!-- 底部组件 -->
 <my-footer></my-footer>
