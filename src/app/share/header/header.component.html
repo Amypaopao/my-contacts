@@ -1,0 +1,7 @@
+<div class="header">
+  <h3>
+    {{ title }}
+    <!-- 当isShowCreateButton为true时，显示i标签，点击i标签，跳转到编辑页面 -->
+    <i *ngIf="isShowCreateButton" [routerLink]="['/edit']"></i>
+  </h3>
+</div>
