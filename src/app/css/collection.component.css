@@ -4,8 +4,8 @@
 }
 ul {
   list-style: none;
-  li {
-    width: 100%;
-    height: 60px;
-  }
+}
+ul li {
+  width: 100%;
+  height: 60px;
 }

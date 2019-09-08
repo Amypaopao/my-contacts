@@ -15,6 +15,7 @@ nav a {
   line-height: 40px;
   border-top: 1px solid #3dd689;
   box-sizing: border-box;
+  background-color: #fff;
 }
 nav a i {
   font-style: normal;
